@@ -6,7 +6,7 @@ package Test;
 
 /*
 This class for testing your methods.
-And practicing in merge conflicts because we all able to make changes at this file.
+And practicing in merge conflicts because we all will be able to make changes at this file.
  */
 
 public class test {
