@@ -1,6 +1,6 @@
 package akmalSalomov;
 
-public class Class1 {
+public class OddOrEven {
 
     public static void main(String[] args) {
         oddOrEven(5);
