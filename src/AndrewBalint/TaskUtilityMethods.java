@@ -7,6 +7,7 @@ public class TaskUtilityMethods {
 
         System.out.println(identify(11));
 
+        System.out.println(NDivide(99,25));
 
     }
 
@@ -35,8 +36,20 @@ public class TaskUtilityMethods {
     public static int NDivide(int n1, int n2){
         int result =0;
 
+        while(n1>=n2){
+            n1-=n2;
+            result++;
+        }
+
+
         return result;
+
+        /*
+            NDivide without / operator:umbers -
+Write a method that can divide two numbers without using division operator
+         */
     }
+
 
 
 }
