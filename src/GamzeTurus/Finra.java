@@ -1,16 +1,26 @@
 package GamzeTurus;
 
 public class Finra {
+    public static void main(String[] args) { printNum(); }
 
-    public static String finra(int num) {
 
-        if (num >= 1 && num <= 30) {
-            return (num % 15 == 0) ? "FINRA" : (num % 3 == 0) ? "FIN" : (num % 5 == 0) ? "RA" : "" + num;
+
+    public static void printNum(){
+
+
+        for (int i = 1; i <= 30; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FINRA");
+            } else if (i % 3 == 0) {
+                System.out.println("FIN");
+            } else if (i % 5 == 0) {
+                System.out.println("RA");
+            } else {
+                System.out.println(i);
+            }
+
 
         }
-        return "invalid number";
     }
-
-
-    }
+}
 
