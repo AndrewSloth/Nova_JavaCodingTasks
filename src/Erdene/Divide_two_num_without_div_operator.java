@@ -1,8 +1,8 @@
 package Erdene;
 
 public class Divide_two_num_without_div_operator {
-    public static void Divide(double Dividend, double divisor) {
-        int count = 1;
+    public static void Divide(int Dividend, int divisor) {
+        int count = 0;
         double div = Dividend;
 
         try {
@@ -13,7 +13,7 @@ public class Divide_two_num_without_div_operator {
             throw new RuntimeException(e);
         }
 
-        while(Dividend > divisor){
+        while(Dividend >= divisor){
             Dividend -= divisor;
             count ++;
         }
