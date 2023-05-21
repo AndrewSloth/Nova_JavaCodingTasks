@@ -7,7 +7,8 @@ public class TaskUtilityMethods {
 
         System.out.println(identify(-5));
 
-        System.out.println(NDivide(99,25));
+        System.out.println(NDivide(30,-10));
+
 
         FINRA();
 
@@ -40,12 +41,25 @@ public class TaskUtilityMethods {
 
     public static int NDivide(int n1, int n2){
         int result =0;
+        boolean negative = false;
+
+        if(n1<0){
+            n1=n1*(-1);
+            negative=true;
+        }
+        else if (n2<0) {
+            n2=n2*(-1);
+            negative=true;
+        }
+
 
         while(n1>=n2){
             n1-=n2;
             result++;
         }
 
+        if(negative)
+            result*=(-1);
 
         return result;
 
