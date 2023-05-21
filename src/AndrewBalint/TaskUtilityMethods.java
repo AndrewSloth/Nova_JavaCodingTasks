@@ -5,7 +5,7 @@ public class TaskUtilityMethods {
 
     public static void main(String[] args) {
 
-        System.out.println(identify(11));
+        System.out.println(identify(-5));
 
         System.out.println(NDivide(99,25));
 
@@ -21,6 +21,9 @@ public class TaskUtilityMethods {
                 result= "Even";
                 break;
             case 1:
+                result= "Odd";
+                break;
+            case -1: //For negative numbers
                 result= "Odd";
                 break;
         }
