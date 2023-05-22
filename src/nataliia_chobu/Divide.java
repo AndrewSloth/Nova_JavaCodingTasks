@@ -2,20 +2,31 @@ package nataliia_chobu;
 
 public class Divide {
     public static void main(String[] args) {
-        System.out.println(divideWithoutDivisionOperator(12,3));
+divideWithoutDivisionOperator(12,5);
+
     }
 
-    public static int divideWithoutDivisionOperator(int a, int b) {
+
+    public static void divideWithoutDivisionOperator(int a,int b) {
 
         int result = 0;
-
-        while (a >= b) {
-
-            a -= b;
-            result++;
+        if(a<=0 || b<=0){
+            System.err.println("Zero and negative numbers are not accepted. Given dividend is \""+a+"\", given divisor is \""+b+"\".");
         }
+            while (a >= b) {
 
-        return result;
+                a -= b;
+                result++;
+            }
 
+        System.out.println(result);
+
+        }
     }
-}
+
+
+
+
+
+
+
