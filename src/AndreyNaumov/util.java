@@ -51,15 +51,69 @@ identify(5); ->"Odd"
 identify(6); ->"Even"
      */
 
-    /**Print the number and determine odd or even
-     *@param   num   integer number
+    /**
+     * Print the number and determine odd or even
+     *
+     * @param num integer number
      */
     public static void oddOrEven(int num) {
         if (num % 2 == 0) {
-            System.out.println(num + "Is even number");
+            System.out.println(num + " Is even number");
         } else {
-            System.out.println(num + "Is odd number");
+            System.out.println(num + " Is odd number");
         }
+    }
+
+
+    /*
+Write a method that can divide two numbers without using division operator
+ */
+
+
+    /** Returns integer quotient and remainder of the division
+     * @param dividend
+     * @param divisor
+     * @return array with 2 integers
+     * [0] is integer quotient
+     * [1] is remainder of the division
+     */
+
+    public static int[] divideNum(int dividend, int divisor) {
+        int[] arr = new int[2];
+        if (dividend == 0) {
+            arr[0] = 0;
+            return arr;
+        }
+        if (divisor == 0) {
+            throw new ArithmeticException("division by 0");
+        }
+
+        boolean isNegative = false;
+
+        if (dividend < 0) {
+            isNegative = true;
+            dividend *= -1;
+        }
+        if (divisor < 0) {
+            isNegative = true;
+            divisor *= -1;
+        }
+
+        int result = 0;
+
+        while (dividend > divisor) {
+            dividend -= divisor;
+            result += 1;
+        }
+        int reminder = dividend;
+
+        if (isNegative) {
+            result *= -1;
+        }
+        arr[0] = result;
+        arr[1] = reminder;
+
+        return arr;
     }
 
 
