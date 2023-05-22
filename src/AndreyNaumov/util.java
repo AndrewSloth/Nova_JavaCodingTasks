@@ -52,7 +52,7 @@ identify(6); ->"Even"
      */
 
     /**Print the number and determine odd or even
-     *@param   num   intejer number
+     *@param   num   integer number
      */
     public static void oddOrEven(int num) {
         if (num % 2 == 0) {
