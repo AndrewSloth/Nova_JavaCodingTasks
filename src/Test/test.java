@@ -9,7 +9,7 @@ This class for testing your methods.
 And practicing in merge conflicts because we all will be able to make changes at this file.
  */
 
-import AndreyNaumov.finra;
+
 import Erdene.Divide_two_num_without_div_operator;
 import Erdene.Finra;
 import Erdene.Numbers_odd_or_even;
@@ -22,8 +22,9 @@ public class test {
         Numbers_odd_or_even.identify(11);
 
 
-        Divide_two_num_without_div_operator.Divide(15,5);
+        Divide_two_num_without_div_operator.Divide(10,3);
 
+        Finra.finra();
 
 
     }
