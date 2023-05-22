@@ -3,13 +3,13 @@ package mariiaSuzdal;
 public class DivideNumbersWithoutOperator {
     public static void main(String[] args) throws Exception {
 
-        withoutOperator(10, 2);
+        withoutOperator(10, -2);
 
     }
 
     public static void withoutOperator(int num1, int num2) throws Exception {
 
-        if (num1 <= 0) {
+        if (num1 <= 0 || num2 <=0) {
             throw new Exception(num1 + " can not be negative or zero");
         }
 
