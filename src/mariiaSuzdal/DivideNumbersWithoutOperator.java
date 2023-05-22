@@ -1,7 +1,26 @@
 package mariiaSuzdal;
 
 public class DivideNumbersWithoutOperator {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        withoutOperator(10, 2);
+
+    }
+
+    public static void withoutOperator(int num1, int num2) throws Exception {
+
+        if (num1 <= 0) {
+            throw new Exception(num1 + " can not be negative or zero");
+        }
+
+        int answer = 0;
+
+        while (num1 >= num2) {
+            num1 -= num2;
+            answer++;
+        }
+        System.out.println("Answer is " + answer);
+
 
     }
 }
