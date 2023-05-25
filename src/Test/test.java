@@ -10,11 +10,10 @@ And practicing in merge conflicts because we all will be able to make changes at
  */
 
 
-import Erdene.Divide_two_num_without_div_operator;
-import Erdene.Finra;
-import Erdene.Numbers_odd_or_even;
+import Erdene.week01.Divide_two_num_without_div_operator;
+import Erdene.week01.Finra;
+import Erdene.week01.Numbers_odd_or_even;
 
-import java.sql.Array;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,7 +33,7 @@ public class test {
 
 
         Map<String, String> map = new HashMap<>();
-        map.
+
     }
 
 }

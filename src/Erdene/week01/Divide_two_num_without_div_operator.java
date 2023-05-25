@@ -1,4 +1,4 @@
-package Erdene;
+package Erdene.week01;
 
 public class Divide_two_num_without_div_operator {
     public static void Divide(double Dividend, double divisor) {
