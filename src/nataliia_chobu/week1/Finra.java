@@ -1,4 +1,4 @@
-package nataliia_chobu;
+package nataliia_chobu.week1;
 
 public class Finra {
     public static void finRa() {
