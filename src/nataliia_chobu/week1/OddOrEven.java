@@ -1,4 +1,4 @@
-package nataliia_chobu;
+package nataliia_chobu.week1;
 
 public class OddOrEven {
     public static void main(String[] args) {
