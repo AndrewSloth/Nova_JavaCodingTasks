@@ -8,24 +8,7 @@ public class Divide {
 //divideWithoutDivisionOperator(-12,5);
         divideWithoutOperator(80, 8);
 
-        int[][] arr = new int[][]{{1, 2}, {3, 4}};
-        arr[1] = arr[0];
-        System.out.println(Arrays.toString(arr[0]));
-
-        int[][] arr1 = {{1, 2, 3}, {3, 4}};
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 2; j++) {
-                System.out.print(arr1[i][j] + " ");
-            }
-        }
-
-
-
-
-
     }
-
-
     public static void divideWithoutDivisionOperator(int a, int b) {
 
 
