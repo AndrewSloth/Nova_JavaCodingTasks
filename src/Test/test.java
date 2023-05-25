@@ -14,6 +14,10 @@ import Erdene.Divide_two_num_without_div_operator;
 import Erdene.Finra;
 import Erdene.Numbers_odd_or_even;
 
+import java.sql.Array;
+import java.util.HashMap;
+import java.util.Map;
+
 public class test {
     public static void main(String[] args) {
 
@@ -26,7 +30,11 @@ public class test {
 
         Finra.finra();
 
+        int [] arr = new int [2];
 
+
+        Map<String, String> map = new HashMap<>();
+        map.
     }
 
 }
