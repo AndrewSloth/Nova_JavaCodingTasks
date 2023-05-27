@@ -24,7 +24,7 @@ public class test {
 
         Finra.finra();
 
-        Numbers_PrintConsecutiveNumbers.printConsecutiveNumbers(9);
+        Numbers_SwapNumbers.swapNumbers(23, 6);
 
         Numbers_DivisibleBy_3_5_15.Divisible();
 
