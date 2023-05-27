@@ -9,13 +9,9 @@ This class for testing your methods.
 And practicing in merge conflicts because we all will be able to make changes at this file.
  */
 
+import Erdene.week01.*;
+import Erdene.week02.*;
 
-import Erdene.week01.Divide_two_num_without_div_operator;
-import Erdene.week01.Finra;
-import Erdene.week01.Numbers_odd_or_even;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class test {
     public static void main(String[] args) {
@@ -24,15 +20,18 @@ public class test {
 
         Numbers_odd_or_even.identify(11);
 
-
         Divide_two_num_without_div_operator.Divide(10,3);
 
         Finra.finra();
 
-        int [] arr = new int [2];
+        Numbers_PrintConsecutiveNumbers.printConsecutiveNumbers(9);
+
+        Numbers_DivisibleBy_3_5_15.Divisible();
+
+        Numbers_SwapNumbers.swapNumbers(23, 4);
 
 
-        Map<String, String> map = new HashMap<>();
+
 
     }
 
