@@ -1,4 +1,4 @@
-package hayrengulPataer;
+package AndreyNaumov.week1;
 
 public class Finra {
     public static void main(String[] args) {
@@ -17,6 +17,18 @@ public class Finra {
         }
         System.out.println(result);
 
+
+    }
+
+    public static class OddOrEven {
+        public static void oddEven(int num) {
+
+            if (num % 2 == 0) {
+                System.out.println("Even");
+            } else {
+                System.out.println("Odd");
+            }
+        }
 
     }
 }
