@@ -1,20 +1,21 @@
 package AndreyNaumov;
 
-import java.sql.SQLOutput;
+import AndreyNaumov.week_1.util_week1;
+
 import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
         System.out.println("FINRA task");
-        util.finra();
+        util_week1.finra();
         System.out.println();
         System.out.println("------------------------------------------------------------------------");
-        util.finra1();
+        util_week1.finra1();
         System.out.println();
         System.out.println("------------------------------------------------------------------------");
 
         System.out.println("OddOrEven Task");
-        util.oddOrEven(-5741);
+        util_week1.oddOrEven(-5741);
         System.out.println();
 
         System.out.println("------------------------------------------------------------------------");
@@ -22,7 +23,7 @@ public class Test {
         System.out.println("divideNum Task");
 
         try {
-            System.out.println(Arrays.toString(util.divideNum(75,234)));
+            System.out.println(Arrays.toString(util_week1.divideNum(75,234)));
         } catch (ArithmeticException e){
             System.err.println("You cant dived by 0");
         }
