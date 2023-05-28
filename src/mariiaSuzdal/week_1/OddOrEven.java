@@ -1,4 +1,4 @@
-package mariiaSuzdal;
+package mariiaSuzdal.week_1;
 
 public class OddOrEven {
     public static void main(String[] args) {
