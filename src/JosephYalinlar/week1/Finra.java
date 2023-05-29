@@ -1,4 +1,4 @@
-package JosephYalinlar;
+package JosephYalinlar.week1;
 
 public class Finra {
     public static void printFinra() {
