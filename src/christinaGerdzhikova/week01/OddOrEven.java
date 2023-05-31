@@ -1,4 +1,4 @@
-package christinaGerdzhikova;
+package christinaGerdzhikova.week01;
 
 import java.util.Scanner;
 
