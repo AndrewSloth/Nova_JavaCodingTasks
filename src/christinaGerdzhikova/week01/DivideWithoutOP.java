@@ -20,5 +20,5 @@ public class DivideWithoutOP {
         System.out.println(Divide(scan.nextInt(), scan.nextInt()));
 
     }
-
 }
+//Write a method that can divide two numbers without using division operator
