@@ -12,9 +12,9 @@ public class PrintConsecutiveNumbers {
         String three = "Test";
         String five = "Coders";
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i <= n; i++) {
 
-            if (i % 5 == 0 && i % 3 == 0 && i % 2 == 0) {
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0) {
                 result = two + three + five;
             } else if (i % 2 == 0 && i % 3 == 0) {
                 result = two + three;

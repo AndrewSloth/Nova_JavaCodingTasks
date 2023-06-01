@@ -39,7 +39,10 @@ public class Divide {
         System.out.println(result);
     }
 }
-
+ /*
+            NDivide without / operator:umbers -
+Write a method that can divide two numbers without using division operator
+         */
 
 
 
