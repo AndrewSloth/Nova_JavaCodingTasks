@@ -1,4 +1,4 @@
-package Erdene;
+package Erdene.week01;
 
 public class Finra {
     public static void finra(){

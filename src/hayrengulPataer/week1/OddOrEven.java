@@ -1,4 +1,4 @@
-package hayrengulPataer;
+package hayrengulPataer.week1;
 
 public class OddOrEven {
     public static void oddEven(int num) {
