@@ -13,8 +13,7 @@ public class FrequencyOfCharacters {
 
     public static String freqOfChar(String characters) {
 
-        ArrayList<String> list = new ArrayList<>();
-        list.addAll(Arrays.asList(characters.split("")));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(characters.split("")));
 
         String answer = "";
 
