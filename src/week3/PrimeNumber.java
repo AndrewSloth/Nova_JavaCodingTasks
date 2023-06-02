@@ -4,6 +4,8 @@ public class PrimeNumber {
 
     static void checkPrime(int n){
 
+        // Write a method that can check if a number is prime or not
+
         int i , m = 0, f = 0;
 
 
