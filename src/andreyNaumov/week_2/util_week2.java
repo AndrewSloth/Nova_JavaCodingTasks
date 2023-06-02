@@ -1,4 +1,4 @@
-package AndreyNaumov.week_2;
+package andreyNaumov.week_2;
 
 public class util_week2 {
 
