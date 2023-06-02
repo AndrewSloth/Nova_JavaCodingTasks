@@ -34,7 +34,7 @@ public class FrequencyOfCharacters {
         Map<Character, Integer> map = new HashMap<>();
 
 
-        for (int i = 0; i <= char2.length() -1; i++) {
+        for (int i = 0; i <= char2.length() - 1; i++) {
 
             if (map.containsKey(char2.charAt(i))) {
                 map.replace(char2.charAt(i), map.get(char2.charAt(i)) + 1);
