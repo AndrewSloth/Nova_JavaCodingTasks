@@ -1,19 +1,20 @@
 package AndrewBalint.week3;
 
-import java.util.InputMismatchException;
+import java.util.*;
 
 public class Week3Utility {
     public static void main(String[] args) {
 
-        //System.out.println(isPrime(31));
+        System.out.println(isPrime(31));
 
         try{
-            System.out.println(reverseNegative(14));;
+            System.out.println(reverseNegative(-14));
         }
         catch(InputMismatchException e){
             e.printStackTrace();
         }
 
+        System.out.println(frequencyOfChars("AAABBBCCCDDD"));
 
 
     }
@@ -36,6 +37,7 @@ public class Week3Utility {
         for(int i = 2; i <num; i++){
             if(num%i==0) {
                 isPrime = false;
+                break;
             }
         }
 
@@ -67,7 +69,34 @@ public class Week3Utility {
             Write a return method that can find the frequency of characters
             Ex:  FrequencyOfChars("AAABBCDD") ==> A3B2C1D2**
          */
+
+
+        //check for null or empty string
+        if(entry==null||entry.isEmpty()) {
+            System.out.println("String cannot be null or empty");
+            System.exit(1);
+        }
+
         String result ="";
+
+        //Map for storing char and freq without duplicates
+        Map<String, Integer> splits = new LinkedHashMap<>();
+
+
+        //go through collection and get frequencies of each char
+        for (String each : entry.split("")){
+            int freq = Collections.frequency(Arrays.asList(entry.split("")), each);
+
+            //Add data to the map
+            splits.put(each, freq);
+
+        }
+
+        //Go through the map and add chars to the result string
+        for (String each : splits.keySet()) {
+            result+=each+splits.get(each);
+
+        }
 
         return result;
     }
