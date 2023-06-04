@@ -1,5 +1,6 @@
 package Erdene.week03;
 
+//Write a method that can check if a number is prime or not
 public class Numbers_PrimeNumber {
 
     public static void primeNumber(int N){
