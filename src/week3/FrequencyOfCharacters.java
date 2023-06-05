@@ -8,6 +8,7 @@ public class FrequencyOfCharacters {
     // String - Frequency of Characters
     // Write a return method that can find the frequency of characters
 
+
     public static String frequencyOfCharacters(String str){
 
         String result = "";
