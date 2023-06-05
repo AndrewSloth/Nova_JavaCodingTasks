@@ -14,11 +14,14 @@ public class String_FrequencyOfCharacters {
 
     public static Map<String, Integer> Frequency(String str){
 
+        //Map for unique Characters of the String and frequency of that Character
         Map<String, Integer>freqOfString = new LinkedHashMap<>();
 
+        //iterating through String and finding frequency using Collection.frequency
         for(String each : str.split("")){
             int freq = Collections.frequency(Arrays.asList(str.split("")), each);
 
+            //putting unique Character along with frequency number
             freqOfString.put(each, freq);
         }
         return freqOfString;
