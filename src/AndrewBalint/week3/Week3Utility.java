@@ -8,7 +8,7 @@ public class Week3Utility {
         System.out.println(isPrime(31));
 
         try{
-            System.out.println(reverseNegative(-14));
+            System.out.println(reverseNegative(-100));
         }
         catch(InputMismatchException e){
             e.printStackTrace();
@@ -54,13 +54,20 @@ public class Week3Utility {
             Write a return method that can reverse negative number and return it as int
          */
 
+
         if(neg>=0){
             throw new InputMismatchException("Invalid input. Input must be a negative number.");
         }
 
-        neg = neg*(-1);
+        String numberString = Integer.toString(neg);
+        String result = "";
 
-        return neg;
+        for(int i = numberString.length()-1; i>=0;i--){
+            result+=""+numberString.charAt(i);
+        }
+
+
+        return Integer.parseInt(result.substring(0,result.length()-1));
     }
 
     public static String frequencyOfChars(String entry){
@@ -77,7 +84,7 @@ public class Week3Utility {
             System.exit(1);
         }
 
-        String result ="";
+        String result =""; //Resulting string
 
         //Map for storing char and freq without duplicates
         Map<String, Integer> splits = new LinkedHashMap<>();
