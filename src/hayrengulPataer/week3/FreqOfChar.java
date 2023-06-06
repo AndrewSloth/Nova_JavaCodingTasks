@@ -7,7 +7,7 @@ public class FreqOfChar {
 
     public static void main(String[] args) {
 
-        System.out.println(FreqOfChar("AAABBCDD"));
+        System.out.println(FreqOfChar("AABBBCCDD"));
     }
 
    public static String FreqOfChar(String str){

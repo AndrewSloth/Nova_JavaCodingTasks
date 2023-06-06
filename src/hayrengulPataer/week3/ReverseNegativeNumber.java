@@ -3,7 +3,7 @@ package hayrengulPataer.week3;
 public class ReverseNegativeNumber {
 
     public static void main(String[] args) {
-        reverseNegativeNumber(-123);
+        reverseNegativeNumber(-1000);
 
     }
 
@@ -14,8 +14,8 @@ public class ReverseNegativeNumber {
             num = num * (-1);
         }
         while (num != 0){
-            int remainder = num % 10;
-            reverse = reverse * 10 + remainder;
+            int eachNumber = num % 10;
+            reverse = reverse * 10 + eachNumber;
             num = num / 10;
         }
         return reverse;
