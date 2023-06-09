@@ -10,6 +10,7 @@ public class SameLetters {
         same("abc", "abb"); -> false:
          */
 
+
     public static boolean sameLetters(String str1, String str2) {
         str1 = str1.toLowerCase().replace(" ", "");
         str2 = str2.toLowerCase().replace(" ", "");

@@ -1,8 +1,9 @@
-package week2;
+package akmalSalomov.week2;
 
 public class DivisibleBy {
 
     public static void main(String[] args) {
+
 
         String divisibleBy15 = "Divisible by 15: ";
         String divisibleBy5 = "Divisible by 5: ";
