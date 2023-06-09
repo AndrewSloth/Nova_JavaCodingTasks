@@ -1,4 +1,4 @@
-package akmalSalomov;
+package akmalSalomov.week1;
 
 public class DivideWithoutOperator {
 
@@ -6,6 +6,7 @@ public class DivideWithoutOperator {
 
         divideTwoNumbers(20, 10);
     }
+
 
     public static void divideTwoNumbers(int a, int b) {
         int count = 0;

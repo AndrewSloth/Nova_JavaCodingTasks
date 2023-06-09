@@ -1,4 +1,4 @@
-package akmalSalomov;
+package akmalSalomov.week1;
 
 public class OddOrEven {
 

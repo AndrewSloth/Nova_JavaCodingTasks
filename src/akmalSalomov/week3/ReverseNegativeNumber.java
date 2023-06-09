@@ -1,4 +1,4 @@
-package week3;
+package akmalSalomov.week3;
 
 public class ReverseNegativeNumber {
 
