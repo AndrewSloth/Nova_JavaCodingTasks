@@ -32,7 +32,7 @@ public class FrequencyOfCharacters {
     public static Map freqOfChar2(String char2) {
 
         Map<Character, Integer> map = new HashMap<>();
-
+//          key          value
 
         for (int i = 0; i <= char2.length() - 1; i++) {
 
