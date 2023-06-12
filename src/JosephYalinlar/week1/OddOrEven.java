@@ -1,4 +1,4 @@
-package JosephYalinlar;
+package JosephYalinlar.week1;
 
 public class OddOrEven {
     public String identifyOddOrEven(int number) {
