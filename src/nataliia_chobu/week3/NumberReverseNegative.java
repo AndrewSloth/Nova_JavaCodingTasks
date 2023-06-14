@@ -5,7 +5,7 @@ public class NumberReverseNegative {
    Write a return method that can reverse negative number and return it as int
     */
     public static void main(String[] args) {
-        System.out.println(reversedNegative(-1234));
+        System.out.println(reversedNegative(-100));
 
     }
 
