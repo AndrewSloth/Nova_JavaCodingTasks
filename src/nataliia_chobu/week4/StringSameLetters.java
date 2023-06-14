@@ -12,6 +12,7 @@ public class StringSameLetters {
 //    same("abc", "abb"); -> false:
     public static void main(String[] args) {
         System.out.println(ifTheSameLetters("lsd", "asd"));
+        System.out.println(ifTheSameLetters("abc","cab"));
     }
 
 

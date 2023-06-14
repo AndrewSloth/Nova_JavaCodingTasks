@@ -13,7 +13,7 @@ public class StringRemoveDuplicates {
 
     public static void main(String[] args) {
         System.out.println(removeDuplicates2("AAABBBCCCDDDD"));
-        System.out.println(removeDuplicates("AAABBBCCCDDDD"));
+        System.out.println(removeDuplicates("JJJAAABBBCCCDDDD"));
     }
     public static String removeDuplicates(String str){
 
