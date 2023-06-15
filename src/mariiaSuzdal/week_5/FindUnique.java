@@ -1,8 +1,18 @@
 package mariiaSuzdal.week_5;
 
+
 public class FindUnique {
     public static void main(String[] args) {
 
+        System.out.println(uniqueCh("AAABBBCCCDEF"));
+
+    }
+
+    //first solution
+    public static String uniqueCh(String str) {
+
+
+        return null;
     }
 }
 /*
