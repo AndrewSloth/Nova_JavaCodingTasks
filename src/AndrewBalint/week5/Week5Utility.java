@@ -1,10 +1,14 @@
 package AndrewBalint.week5;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Week5Utility {
 
     public static void main(String[] args) {
 
-        System.out.println(returnUniqueChars("ABBBCCCDEFAF1 1 1 23"));
+        System.out.println(returnUniqueCharsVersion1("ABBBCCCDEFAF1 1 1 23"));
+        System.out.println(returnUniqueCharsVersion2("ABBBCCCDEFAF1 1 1 23"));
         System.out.println(reverseStringVersion1("stunod ekil I"));
         System.out.println(reverseStringVersion2("nuf si avaJ"));
         System.out.println(reverseStringVersion3("noitanetacnoc oN"));
@@ -15,7 +19,7 @@ public class Week5Utility {
     Write a return  method that can find the unique characters from the String
     Ex:  unique("AAABBBCCCDEF")  ==>  "DEF";
      */
-    public static String returnUniqueChars(String str){
+    public static String returnUniqueCharsVersion1(String str){
 
         //The resulting String with unique chars
         String uniqueChars ="";
@@ -44,6 +48,40 @@ public class Week5Utility {
 
         return uniqueChars;
     }
+
+
+    public static String returnUniqueCharsVersion2(String str){
+
+        //The resulting String with unique chars
+        List<String> uniqueChars = new ArrayList<>();
+
+        //iterate through each character
+        for(int i = 0; i<str.length();i++){
+
+            //How many times the character has appeared
+            int count = 0;
+
+            //iterate through the string a second time and see how many times the character reappears
+            for (char dupeCheck: str.toCharArray()) {
+
+                //Increase count each time the character is encountered
+                if(dupeCheck==str.charAt(i)){
+                    count++;
+                }
+            }
+
+            //If char is only found once it is unique and we add to the result String
+            if(count==1){
+                uniqueChars.add(""+str.charAt(i));
+            }
+
+        }
+
+
+        return String.join("", uniqueChars);
+    }
+
+
 
     /*
     4) String - Reverse
