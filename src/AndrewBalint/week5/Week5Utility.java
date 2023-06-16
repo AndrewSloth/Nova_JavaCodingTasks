@@ -7,6 +7,7 @@ public class Week5Utility {
         System.out.println(returnUniqueChars("ABBBCCCDEFAF1 1 1 23"));
         System.out.println(reverseStringVersion1("stunod ekil I"));
         System.out.println(reverseStringVersion2("nuf si avaJ"));
+        System.out.println(reverseStringVersion3("noitanetacnoc oN"));
     }
 
     /*
@@ -67,8 +68,20 @@ Ex: Reverse("ABCD"); ==> DCBA
         }
 
         return reversed;
+    }
+
+    //This version does not concatenate the String inside of the loop
+    public static String reverseStringVersion3(String str){
+
+        char[] reversed = new char[str.length()];
+
+        for(int i = str.length()-1; i>=0;i--){
+            reversed[str.length()-1-i] = str.charAt(i);
+        }
 
 
+
+        return new String(reversed);
     }
 
 }
