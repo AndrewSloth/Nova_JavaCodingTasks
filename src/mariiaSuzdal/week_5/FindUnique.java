@@ -1,6 +1,11 @@
 package mariiaSuzdal.week_5;
 
 
+import java.lang.reflect.Array;
+import java.util.*;
+
+import static java.util.Arrays.*;
+
 public class FindUnique {
     public static void main(String[] args) {
 
@@ -11,8 +16,11 @@ public class FindUnique {
     //first solution
     public static String uniqueCh(String str) {
 
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(str.split("")));
 
-        return null;
+        list.removeIf(p -> Collections.frequency(list, p) > 1);
+
+        return String.valueOf(list);
     }
 }
 /*
