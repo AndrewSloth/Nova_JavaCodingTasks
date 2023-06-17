@@ -1,10 +1,6 @@
 package mariiaSuzdal.week_5;
 
-
-import java.lang.reflect.Array;
 import java.util.*;
-
-import static java.util.Arrays.*;
 
 public class FindUnique {
     public static void main(String[] args) {
