@@ -1,6 +1,11 @@
 package JosephYalinlar.week5;
 
-//Write a return method that can reverse String
+/*
+Write a return method that can reverse String
+Synopsis:
+
+*/
+
 public class ReverseString {
     public static String reverseString(String string) {
         String reverse = "";
