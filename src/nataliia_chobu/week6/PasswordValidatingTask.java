@@ -10,7 +10,7 @@ public class PasswordValidatingTask {
 //5. Password should at least contain a digit
 //6. if all requirements above are met, the method returns true, otherwise returns false
     public static void main(String[] args) {
-        System.out.println(isValidPassword("Helloyou!1"));
+        System.out.println(isValidPassword("Heelloyou!1#"));
     }
 
     public static boolean isValidPassword(String str) {
