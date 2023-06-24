@@ -43,6 +43,6 @@ public class PasswordValidation {
     }
 
     public static void main(String[] args) {
-        System.out.println("passwordValidation(\"Coon2018!\") = " + passwordValidation("ru6QW2@"));
+        System.out.println(passwordValidation("ru6QW2@"));
     }
 }
