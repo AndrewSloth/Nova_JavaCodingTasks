@@ -7,7 +7,6 @@ package Test;
 /*
 This class for testing your methods.
 And practicing in merge conflicts because we all will be able to make changes at this file.
- */
 
 import Erdene.week01.*;
 import Erdene.week02.*;
@@ -36,3 +35,4 @@ public class test {
     }
 
 }
+ */
