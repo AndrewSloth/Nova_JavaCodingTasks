@@ -1,4 +1,4 @@
-package AndreyNaumov.week_1;
+package andreyNaumov.week_1;
 
 // blalslbslbs
 /*

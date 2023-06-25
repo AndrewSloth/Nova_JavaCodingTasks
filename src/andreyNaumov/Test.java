@@ -1,6 +1,6 @@
-package AndreyNaumov;
+package andreyNaumov;
 
-import AndreyNaumov.week_1.util_week1;
+import andreyNaumov.week_1.util_week1;
 
 import java.util.Arrays;
 
