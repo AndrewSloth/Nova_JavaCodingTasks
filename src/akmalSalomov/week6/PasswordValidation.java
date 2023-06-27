@@ -20,6 +20,7 @@ public class PasswordValidation {
         boolean hasLowercase = false;
         boolean hasSpecialCharacter = false;
         boolean hasDigit = false;
+        ///
 
 /*
 I have initialized four boolean variables: hasUppercase, hasLowercase, hasSpecialCharacter and hasDigit to false.

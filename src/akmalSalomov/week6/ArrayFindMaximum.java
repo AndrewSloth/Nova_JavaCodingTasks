@@ -23,6 +23,7 @@ public class ArrayFindMaximum {
 
          */
         return max; // returns the value of max which is the maximum value in the array
+        //
     }
 
     public static void main(String[] args) {

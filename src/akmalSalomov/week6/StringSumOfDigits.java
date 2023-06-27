@@ -11,6 +11,7 @@ public class StringSumOfDigits {
     getNumericValue method uf the Character class and adds it to the sum variable. In the end the method returns the sum
     of digits in the given String
      */
+    ///
 
     public static int sumOfDigits(String str){
         int sum = 0;
