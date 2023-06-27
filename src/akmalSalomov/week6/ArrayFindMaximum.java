@@ -27,6 +27,6 @@ public class ArrayFindMaximum {
 
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(maximumNumber(1,2,4,4,)));
+
     }
 }
