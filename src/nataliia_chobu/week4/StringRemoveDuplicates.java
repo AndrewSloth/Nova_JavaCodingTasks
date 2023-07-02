@@ -16,10 +16,12 @@ public class StringRemoveDuplicates {
         System.out.println(removeDuplicates("JJJAAABBBCCCDDDD"));
     }
     public static String removeDuplicates(String str){
-
+//I convert str into array string
         String [] strArray=str.split("");
-        Set<String> stringLinkedHashSet=new LinkedHashSet<>(Arrays.asList(strArray));
+        //create Set object and passed array String into constructor LInkedHashSet doesn't accept duplicates and maintains insertion order
 
+        Set<String> stringLinkedHashSet=new LinkedHashSet<>(Arrays.asList(strArray));
+// then I did method chaining to convert collection into String and removed extra symbols to return in String view
         return stringLinkedHashSet.toString().replace("[", "").replace("]", "").replace(",", "").replace(" ","");
     }
 
