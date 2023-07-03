@@ -15,13 +15,13 @@ public class RemoveDuplicates {
         Set<Character> seenCharacters = new HashSet<>();
         for (int i = 0; i < string.length(); i++) {
             char currentChar = string.charAt(i);
-            if (!seenCharacters.contains(currentChar)){
+            if (!seenCharacters.contains(currentChar)) {
                 result.append(currentChar);
                 seenCharacters.add(currentChar);
             }
         }
         return result.toString();
-        }
-
     }
+
+}
 
