@@ -13,33 +13,27 @@ public class Array_NuniqueIntegersThatSumUpTo {
     //Chat GPT solution
 
     public static void main(String[] args) {
-        int N = 6;
-        int[] result = generateArrayNuniqueIntegersThatSumUpTo(N);
-        System.out.println(Arrays.toString(result));
+
+        System.out.println(Arrays.toString(array_NuniqueIntegersThatSumUpToZero(8)));
     }
-        public static int[] generateArrayNuniqueIntegersThatSumUpTo(int N) {
-            if (N < 2 || N > 99) {
-                throw new IllegalArgumentException("N should be between 2 and 99.");
-            }
 
-            int[] integers = new int[N];
-            int sum = 0;
 
-            // Generate N-1 random integers
-            for (int i = 0; i < N - 1; i++) {
-                int randomNumber = (int) (Math.random() * N) - (N / 2);
-                integers[i] = randomNumber;
-                sum += randomNumber;
-            }
+    public static int[] array_NuniqueIntegersThatSumUpToZero(int nums) {
 
-            // Calculate the remaining integer to make the sum zero
-            integers[N - 1] = -sum;
-
-            // Return the array of unique integers
-            return integers;
+        if(nums<1 || nums>100){
+            throw new IllegalArgumentException();
         }
 
+        int[] result = new int[nums];
+        int sum = 0;
+        for (int i = 0; i < nums - 1; i++) {
+            result[i] = i;
+            sum += i;
+        }
+        result[nums - 1] = -sum;
+        return result;
 
+    }
 
 }
 
