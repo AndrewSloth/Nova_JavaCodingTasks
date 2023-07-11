@@ -18,19 +18,19 @@ public class Array_NuniqueIntegersThatSumUpTo {
     }
 
 
-    public static int[] array_NuniqueIntegersThatSumUpToZero(int nums) {
+    public static int[] array_NuniqueIntegersThatSumUpToZero(int num) {
 
-        if(nums<1 || nums>100){
+        if(num<1 || num>100){
             throw new IllegalArgumentException();
         }
 
-        int[] result = new int[nums];
+        int[] result = new int[num];
         int sum = 0;
-        for (int i = 0; i < nums - 1; i++) {
+        for (int i = 0; i < num - 1; i++) {
             result[i] = i;
             sum += i;
         }
-        result[nums - 1] = -sum;
+        result[num - 1] = -sum;
         return result;
 
     }
