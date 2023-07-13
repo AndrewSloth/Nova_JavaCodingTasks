@@ -32,7 +32,7 @@ public class Week_8 {
     //The answer [1, -1, 1, 3] would be incorrect (because value 1 occurs twice).
     //For N = 3 one of the possible answers is [-1,0,1]  (but there are many more correct answers).
 
-    public static int[] NuniqueIntegersThatSumUpTo(int n) {
+    public static int[] nUniqueIntegersThatSumUpTo(int n) {
         if (n < 1 || n >= 100) {
             throw new IllegalArgumentException();
         }
@@ -67,7 +67,7 @@ public class Week_8 {
 
         System.out.println("-------------NuniqueIntegersThatSumUpTo------------------------------");
         t1 = System.currentTimeMillis();
-        System.out.println("NuniqueIntegersThatSumUpTo(n) = " + Arrays.toString(NuniqueIntegersThatSumUpTo(13 )));
+        System.out.println("NuniqueIntegersThatSumUpTo(n) = " + Arrays.toString(nUniqueIntegersThatSumUpTo(13 )));
         t2 = System.currentTimeMillis();
         System.out.println("It takes " + (t2 - t1) + " milliSec");
         System.out.println();
