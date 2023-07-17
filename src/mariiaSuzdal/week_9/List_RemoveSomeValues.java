@@ -1,7 +1,5 @@
 package mariiaSuzdal.week_9;
 
-import SKuzmenko.numbers;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
