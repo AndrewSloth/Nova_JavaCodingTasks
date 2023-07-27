@@ -1,16 +1,21 @@
 package JosephYalinlar.week6;
 
 public class String_PasswordValidation {
-    boolean noSpace = true, leastSixChar = false, hasUpperCase = false, hasLowerCase = false, hasSpecialChar =
-            false, hasDigit = false;
+    static boolean noSpace = true;
+    static boolean leastSixChar = false;
+    static boolean hasUpperCase = false;
+    static boolean hasLowerCase = false;
+    static boolean hasSpecialChar =
+            false;
+    static boolean hasDigit = false;
 
-    public boolean validatePassword(String password) {
+    public static boolean validatePassword(String password) {
 
 
         if (password.contains(" ")) {
             noSpace = false;
         }
-        if (password.length() < 6) {
+        if (password.length() > 6) {
             leastSixChar = true;
         }
         for (int i = 0; i < password.length(); i++) {
@@ -27,22 +32,41 @@ public class String_PasswordValidation {
                 break;
             }
         }
+        for (int i = 0; i < password.length(); i++) {
+
+            hasDigit = Character.isDigit(password.charAt(i));
+            if (hasDigit) {
+                break;
+            }
+        }
+        for (int i = 0; i < password.length(); i++) {
+
+            hasSpecialChar = (!Character.isDigit(i) && !Character.isLetter(i) && !Character.isWhitespace(i));
+            if (hasSpecialChar) {
+                break;
+            }
+        }
+        if (noSpace && leastSixChar && hasLowerCase && hasUpperCase && hasDigit && hasSpecialChar) {
+            return true;
+        } else {
+            return false;
+        }
 
 
-        return false;
     }
 
     public static void main(String[] args) {
-
+        String testPassword = "Hello123!";
+        System.out.println("validatePassword(testPassword) = " + validatePassword(testPassword));
     }
 }
 /*
 Write a return method that can verify if a password is valid or not. Requirements:
 Password MUST be at least 6 characters and should not contain space - Done
-Password should at least contain one upper case letter -
-Password should at least contain one lowercase letter -
-Password should at least contain one special characters -
-Password should at least contain a digit -
+Password should at least contain one upper case letter - Done
+Password should at least contain one lowercase letter - Done
+Password should at least contain one special characters - Done
+Password should at least contain a digit - Done
 if all requirements above are met, the method returns true, otherwise returns false
  */
 
