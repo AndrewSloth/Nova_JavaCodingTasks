@@ -1,3 +1,12 @@
+/*
+Write a return method that can verify if a password is valid or not. Requirements:
+Password MUST be at least 6 characters and should not contain space - Done
+Password should at least contain one upper case letter - Done
+Password should at least contain one lowercase letter - Done
+Password should at least contain one special characters - Done
+Password should at least contain a digit - Done
+if all requirements above are met, the method returns true, otherwise returns false
+ */
 package JosephYalinlar.week6;
 
 public class String_PasswordValidation {
