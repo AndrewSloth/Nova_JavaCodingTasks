@@ -7,8 +7,13 @@ public class Array_MoveZerosToTheEnd {
 //input:  {1,0,2,0,3,0,4,0};
 //output: [1, 2, 3, 4, 0, 0, 0, 0]
     public static void main(String[] args) {
-        int nonZeroIndex = 0;
         int[] arr = {11, 0, 12, 0, 13, 0, 14, 0};
+
+        System.out.println(Arrays.toString(moveZeroToEndOneLoop(arr)));
+        System.out.println(Arrays.toString(moveZeroToEnd(new int[]{0, 0, -1, 1, 0, 2, 0, -9, 3, 0, 0, 4})));
+    }
+    public static int[] moveZeroToEndOneLoop(int[] arr){
+        int nonZeroIndex = 0;
         // Iterate through the array
         for (int i = 0; i < arr.length; i++) {
             // If the element is non-zero, swap it with the element at nonZeroIndex
@@ -19,8 +24,7 @@ public class Array_MoveZerosToTheEnd {
                 nonZeroIndex++;
             }
         }
-        System.out.println(Arrays.toString(arr));
-       // System.out.println(Arrays.toString(moveZeroToEnd(new int[]{0, 0, -1, 1, 0, 2, 0, -9, 3, 0, 0, 4})));
+        return arr;
     }
 
     public static int[] moveZeroToEnd(int[] nums) {
