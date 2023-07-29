@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Array_concat2Arrays {
     public static void main(String[] args) {
-        System.out.println("int array = "+Arrays.toString(mergedArray(new int[]{1,2,3,4},new int[]{5,6,7,8})));
+        System.out.println("int array = "+Arrays.toString(mergedArray(new int[]{10,20,30,40},new int[]{5,6,7,8})));
         System.out.println("char array = " + Arrays.toString(mergedArray(new char[]{'a','b','c'},new char[]{'d','f','g'})));
     }
 
