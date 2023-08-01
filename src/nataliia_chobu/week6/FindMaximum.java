@@ -14,6 +14,7 @@ public class FindMaximum {
                max=each;
            }
        }
+
        return max;
     }
 }
